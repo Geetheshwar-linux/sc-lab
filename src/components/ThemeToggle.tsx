@@ -27,17 +27,5 @@ export function ThemeToggle({ isDark, onToggle }: ThemeToggleProps) {
 }
 
 // Example usage in a parent component
-export function App() {
-  const [isDark, setIsDark] = useState(false);
 
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
-
-  return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
-      <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
-      <p>Current theme: {isDark ? 'Dark' : 'Light'}</p>
-    </div>
-  );
 }
